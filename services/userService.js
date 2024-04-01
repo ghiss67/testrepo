@@ -8,7 +8,7 @@ const userService = {
     try {
       return await User.create(userData);
     } catch (error) {
-      throw new Error('Failed to create user');
+      throw new Error('Failed to create user' + error);
     }
   },
   // Implement other CRUD operations as needed
